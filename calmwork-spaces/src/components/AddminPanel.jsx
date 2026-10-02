@@ -1,4 +1,6 @@
 import React from 'react';
+import { useState } from "react";
+import { cancelBooking } from "../services/bookingService";
 
 export default function AdminPanel({ bookings, todayStr }) {
   const todayBookings = bookings.filter((b) => b.date === todayStr);
